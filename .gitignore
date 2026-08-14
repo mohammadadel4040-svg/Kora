@@ -1,0 +1,35 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# Environment files
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Kubernetes secrets
+k8s/kora-secret.yaml
+
+# Build output
+dist/
+build/
+**/dist/
+**/build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Docker temporary files
+*.pid
+
+# Test / coverage
+coverage/
