@@ -84,7 +84,7 @@ function CreateProperty() {
       console.log("Sending property:", propertyData);
 
       const apiUrl =
-        "http://localhost:5000/api/properties";
+        "https://api-gateway.gentlestone-6c3db93a.swedencentral.azurecontainerapps.io/api/properties";
 
       console.log("Sending request to:", apiUrl);
 

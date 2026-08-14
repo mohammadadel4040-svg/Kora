@@ -43,7 +43,7 @@ function OwnerDashboard() {
       setMessage("");
 
       const propertyResponse = await fetch(
-        `http://localhost:5000/api/properties/owner/${user.id}`
+        `https://api-gateway.gentlestone-6c3db93a.swedencentral.azurecontainerapps.io/api/properties/owner/${user.id}`
       );
 
       const propertyData = await propertyResponse.json();
@@ -57,7 +57,7 @@ function OwnerDashboard() {
 
 
       const rentalResponse = await fetch(
-        `http://localhost:5000/api/rentals/owner/${user.id}`
+        `https://api-gateway.gentlestone-6c3db93a.swedencentral.azurecontainerapps.io/api/rentals/owner/${user.id}`
       );
 
       const rentalData = await rentalResponse.json();
@@ -103,7 +103,7 @@ function OwnerDashboard() {
   ) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/rentals/${requestId}/status`,
+        `https://api-gateway.gentlestone-6c3db93a.swedencentral.azurecontainerapps.io/api/rentals/${requestId}/status`,
         {
           method: "PUT",
 

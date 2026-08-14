@@ -35,7 +35,7 @@ function MyRequests() {
     const fetchRequests = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/rentals/renter/${user.id}`
+          `https://api-gateway.gentlestone-6c3db93a.swedencentral.azurecontainerapps.io/api/rentals/renter/${user.id}`
         );
 
         const data = await response.json();

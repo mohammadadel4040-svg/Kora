@@ -16,7 +16,7 @@ function PropertyDetails() {
     const fetchProperty = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/properties/${id}`
+          `https://api-gateway.gentlestone-6c3db93a.swedencentral.azurecontainerapps.io/api/properties/${id}`
         );
 
         const data = await response.json();

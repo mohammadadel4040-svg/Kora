@@ -71,7 +71,7 @@ function Home() {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/properties?${params.toString()}`
+        `https://api-gateway.gentlestone-6c3db93a.swedencentral.azurecontainerapps.io/api/properties?${params.toString()}`
       );
 
       if (!response.ok) {

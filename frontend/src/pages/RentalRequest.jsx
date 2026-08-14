@@ -30,7 +30,7 @@ function RentalRequest() {
     const fetchProperty = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/properties/${id}`
+          `https://api-gateway.gentlestone-6c3db93a.swedencentral.azurecontainerapps.io/api/properties/${id}`
         );
 
         const data = await response.json();
@@ -71,7 +71,7 @@ function RentalRequest() {
       setStatusMessage("");
 
       const response = await fetch(
-        "http://localhost:5000/api/rentals",
+        "https://api-gateway.gentlestone-6c3db93a.swedencentral.azurecontainerapps.io/api/rentals",
         {
           method: "POST",
           headers: {
