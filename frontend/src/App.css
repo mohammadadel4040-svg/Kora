@@ -150,14 +150,14 @@ button {
   background:
     linear-gradient(
       90deg,
-      rgba(19, 48, 37, 0.96),
-      rgba(19, 48, 37, 0.75)
+      rgba(19, 48, 37, 0.90),
+      rgba(19, 48, 37, 0.45)
     ),
-    linear-gradient(
-      120deg,
-      #265c47,
-      #9bb09f
-    );
+    url("https://korastorage4040.blob.core.windows.net/frontend-assets/hero.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   color: white;
 }
